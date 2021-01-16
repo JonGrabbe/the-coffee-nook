@@ -1,0 +1,38 @@
+h1, h2 {
+	margin: 0;
+}
+	justify-content: flex-start;
+	width: 85%;
+	margin-left: 7%;
+}
+.product {
+	margin: 12px;
+}
+.products-heading {
+	margin-bottom: 0;
+}
+.product-category-info-header {
+	text-align: center;
+	background-color: #e8e5df;
+	padding: 15px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+
+
+@media(max-width: 1450px) {
+	.product-row {
+		justify-content: center;
+	}
+	.product {
+		/*margin: 22px;*/
+	}
+}
+
+@media(max-width: 540px) {
+	.product-row {
+		width: initial;
+		margin-left: initial;
+	}
+}
