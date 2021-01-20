@@ -19,10 +19,14 @@ a {
     text-decoration: none;
 }
 
+/* ---- global ---- */
 .element {
     color: white;
 }
 
+/* ---- header ---- */
 header {
+    display: flex;
+
     background-color: var(--element-color);
 }
