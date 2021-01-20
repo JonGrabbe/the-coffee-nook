@@ -27,6 +27,9 @@ a {
 .heading-medium {
     text-transform: uppercase;
 }
+.heading-large {
+    font-size: 1.5em;
+}
 
 
 /* ---- header ---- */
@@ -34,10 +37,34 @@ header {
     height: 90vh;
     background-image: url('images/hero.jpg');
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 #header-nav-menu {
     display: flex;
+    align-items: center;
+
+    padding: 35px;
 }
 #logo-container {
     margin-right: auto;
+}
+.header-link {
+    margin-right: 20px;
+}
+.last-header-link {
+    margin-right: 0;
+}
+
+
+
+
+
+
+@media(max-width: 650px) {
+    #header-nav-menu {
+        flex-direction: column;
+    }
+    #logo-container {
+        margin-right: initial;
+    }
 }
