@@ -9,24 +9,32 @@
     <title>The Coffee Nook</title>
 </head>
 <body>
-    <header>
+    <header class="mobile-menu-closed" id="header">
         <div class="header-top-container">
             <div id="mobile-control-container">
                 <a href="index.html" id="logo-container">
                     <h1 class="heading heading-large">The Coffee Nook</h1>
                 </a>
-                <button class="mobile-button">open</button>
-                <button class="mobile-button">close</button>
+                <button class="button-img mobile-button" id="open-button" onclick=openMenu()>
+                    <img src="images/icons/menu.svg" alt="" width="15px">
+                </button>
+                <button class="button-img mobile-button" id="close-button" onclick=closeMenu()>
+                    <img src="images/icons/cancel.svg" alt="" width="15px">
+                </button>
             </div>
             <nav id="dropdown-menu-container">
                 <ul id="dropdown-menu">
                     <li class="header header-small nav-link">BEANS</li>
-                    <li class="header header-small nav-link">BEANS</li>
-                    <li class="header header-small nav-link">BEANS</li>
-                    <li class="header header-small nav-link nav-link-last">BEANS</li>
+                    <li class="header header-small nav-link">MUGS</li>
+                    <li class="header header-small nav-link">ACCESSORIES</li>
+                    <li class="header header-small nav-link nav-link-last">ALL PRODUCTS</li>
                 </ul>
             </nav>
         </div>
+        <h2 class="heading heading-xl">COFFEE BEANS, MUGS, AND COFFEE ACCESSORIES</h2>
+        <button class="main-button see-more-button">SEE MORE</button>
     </header>
+
+    <script src="main.js"></script>
 </body>
 </html>

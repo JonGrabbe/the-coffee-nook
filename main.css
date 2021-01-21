@@ -13,7 +13,9 @@ a {
     color: inherit;
     text-decoration: none;
 }
-
+button:hover {
+    cursor: pointer;
+}
 
 
 body {
@@ -22,9 +24,34 @@ body {
 }
 
 
+/* ---- global ---- */
+.heading {
+    text-transform: uppercase;
+}
+.heading-large {
+    font-size: 2em;
+}
+.heading-small {
+    font-size: 1.5em;
+}
+.button-img {
+    background: none;
+    border: none;
+}
+.main-button {
+    background: none;
+    border: solid 2px white;
+    color: white;
+}
+
 
 /* ---- header ---- */
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
     /* background-color: var(--element-color); */
     background-image: url("images/hero.jpg");
     background-size: 100%;
@@ -38,6 +65,9 @@ header {
     align-items: center;
 
     padding: 35px;
+    width: 100%;
+    box-sizing: border-box;
+
 }
 #mobile-control-container {
     margin-right: auto;
@@ -51,8 +81,9 @@ header {
 .nav-link-last {
     margin-right: 0;
 }
-/* -- mobile buttons -- */
-
+.see-more-button {
+    padding: 17px 50px;
+}
 
 
 
@@ -89,7 +120,32 @@ header {
         margin-right: 0;
         width: 100%;
     }
+    .mobile-menu-closed #dropdown-menu-container {
+        display: none;
+    }
     #dropdown-menu {
         flex-direction: column;
+
+        margin-top: 20px;
     }
+    .nav-link {
+        font-size: 2em;
+        text-align: center;
+    }
+    /* -- mobile buttons -- */
+    /* close button */
+    .mobile-menu-closed #close-button {
+        display: none;
+    }
+    .mobile-menu-opened #close-button {
+        display: initial;
+    }
+    /* open button */
+    .mobile-menu-closed #open-button {
+        display: initial;
+    }
+    .mobile-menu-opened #open-button {
+        display: none;
+    }
+
 }
