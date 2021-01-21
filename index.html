@@ -9,35 +9,24 @@
     <title>The Coffee Nook</title>
 </head>
 <body>
-
-    <header class="mobile-menu-closed" id="header">
-        <a href="index.html" id="logo-container">
-            <h1 class="heading">The Coffee Nook</h1>
-        </a>
-        <button class="mobile-button" id="open-button" onclick=openMenu()>open</button>
-        <button class="mobile-button" id="close-button" onclick=closeMenu()>close</button>
-        <nav id="mobile-dropdown-menu-container">
-            <ul id="mobile-dropdown-menu">
-                <li class="heading-medium">beans</li>
-                <li class="heading-medium">beans</li>
-                <li class="heading-medium">beans</li>
-                <li class="heading-medium">beans</li>
-                <li class="heading-medium search-icon" id="search-icon">
-                    <img src="images/icons/search.svg" alt="" width="25px">
-                </li>
-            </ul>
-        </nav>
+    <header>
+        <div class="header-top-container">
+            <div id="mobile-control-container">
+                <a href="index.html" id="logo-container">
+                    <h1 class="heading heading-large">The Coffee Nook</h1>
+                </a>
+                <button class="mobile-button">open</button>
+                <button class="mobile-button">close</button>
+            </div>
+            <nav id="dropdown-menu-container">
+                <ul id="dropdown-menu">
+                    <li class="header header-small nav-link">BEANS</li>
+                    <li class="header header-small nav-link">BEANS</li>
+                    <li class="header header-small nav-link">BEANS</li>
+                    <li class="header header-small nav-link nav-link-last">BEANS</li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <main>
-        
-    </main>
-
-    <footer>
-
-    </footer>
-
-
-    <script src="main.js"></script>
 </body>
 </html>

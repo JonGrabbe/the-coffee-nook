@@ -2,11 +2,6 @@
 :root {
     --element-color: black;
 }
-
-body {
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-}
 ul, li, h1 {
     margin: 0;
     padding: 0;
@@ -19,30 +14,44 @@ a {
     text-decoration: none;
 }
 
-.element {
-    /* color: white; */
+
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
 }
+
+
 
 /* ---- header ---- */
 header {
-    background-image: url('images/hero.jpg');
+    /* background-color: var(--element-color); */
+    background-image: url("images/hero.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+
+    height: 90vh;
     color: white;
 }
+.header-top-container {
+    display: flex;
+    align-items: center;
+
+    padding: 35px;
+}
+#mobile-control-container {
+    margin-right: auto;
+}
+#dropdown-menu {
+    display: flex;
+}
+.nav-link {
+    margin-right: 20px;
+}
+.nav-link-last {
+    margin-right: 0;
+}
 /* -- mobile buttons -- */
-.mobile-menu-closed #close-button {
-    display: none;
-}
-.mobile-menu-closed #open-button {
-    display: block;
-}
-.mobile.menu-opened #close-button {
-    display: block;
-}
-.mobile-menu-opened #open-button {
-    display: none;
-}
 
 
 
@@ -50,43 +59,37 @@ header {
 
 
 
-@media(max-width: 900px) {
-    header {
-        background-image: none;
-        background-color: black;
-        color: white;
-    }
-}
+
+
+
+
 
 @media(min-width: 650px) {
+    /* -- mobile buttons -- */
     .mobile-button {
-        display: none !important;
+        display: none;
     }
 }
 
 @media(max-width: 650px) {
-    /* ---- header ---- */
-    header {
-        /* display: flex;
-        align-items: center;
-        justify-content: space-between; */
+     /* ---- header ---- */
+     header {
+        background-image: none;
+        background-color: black;
+        height: initial;
     }
-    #logo-container {
-        display: inline;
-    }
-    .mobile-menu-closed #mobile-dropdown-menu-container {
-        display: none;
-    }
-    .mobile-menu-opened #mobile-dropdown-menu-container {
-        display: block;
-    }
-    #mobile-dropdown-menu {
-        display: flex;
+    .header-top-container {
         flex-direction: column;
-        align-items: center;
     }
-    /* -- mobile buttons -- */
-    .mobile-button {
-        display: block;
+    #mobile-control-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-right: 0;
+        width: 100%;
+    }
+    #dropdown-menu {
+        flex-direction: column;
     }
 }
