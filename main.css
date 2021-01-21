@@ -31,12 +31,23 @@ header {
     color: white;
 }
 /* -- mobile buttons -- */
-.mobile-button {
+.mobile-menu-closed #close-button {
     display: none;
 }
-.mobile-button ~ #close-button {
+.mobile-menu-closed #open-button {
+    display: block;
+}
+.mobile.menu-opened #close-button {
+    display: block;
+}
+.mobile-menu-opened #open-button {
     display: none;
 }
+
+
+
+
+
 
 
 @media(max-width: 900px) {
@@ -47,16 +58,27 @@ header {
     }
 }
 
+@media(min-width: 650px) {
+    .mobile-button {
+        display: none !important;
+    }
+}
 
 @media(max-width: 650px) {
     /* ---- header ---- */
     header {
-        display: flex;
+        /* display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between; */
     }
-    #mobile-dropdown-menu-container {
+    #logo-container {
+        display: inline;
+    }
+    .mobile-menu-closed #mobile-dropdown-menu-container {
         display: none;
+    }
+    .mobile-menu-opened #mobile-dropdown-menu-container {
+        display: block;
     }
     #mobile-dropdown-menu {
         display: flex;

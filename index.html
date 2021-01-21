@@ -9,12 +9,13 @@
     <title>The Coffee Nook</title>
 </head>
 <body>
-    <header class="element">
-        <a href="index.html">
+
+    <header class="mobile-menu-closed" id="header">
+        <a href="index.html" id="logo-container">
             <h1 class="heading">The Coffee Nook</h1>
         </a>
-        <button class="mobile-button" id="open-button">open</button>
-        <button class="mobile-button" id="close-button">close</button>
+        <button class="mobile-button" id="open-button" onclick=openMenu()>open</button>
+        <button class="mobile-button" id="close-button" onclick=closeMenu()>close</button>
         <nav id="mobile-dropdown-menu-container">
             <ul id="mobile-dropdown-menu">
                 <li class="heading-medium">beans</li>
@@ -35,5 +36,8 @@
     <footer>
 
     </footer>
+
+
+    <script src="main.js"></script>
 </body>
 </html>
