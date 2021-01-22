@@ -134,9 +134,10 @@ header h2 {
 }
 .news-letter-form-container {
     color: white;
+    margin-right: 200px;
 }
 .news-letter-input {
-    width: 60%;
+    width: 80%;
     /* padding: 6px 0; */
     box-sizing: border-box;
     height: 40px;
@@ -153,6 +154,21 @@ header h2 {
     align-items: flex-start;
 }
 
+
+/* ---- popular products ---- */
+.grid-col-4-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.grid-col-4-item {
+    display: flex;
+    align-items: flex-start;
+    max-width: 650px;
+}
+.grid-col-4-item img {
+    border: solid 1px black;
+}
 
 
 
@@ -235,13 +251,18 @@ header h2 {
     .mobile-menu-opened #open-button {
         display: none;
     }
+}
 
+
+
+@media(max-width: 530px) {
     /* --- newsletter --- */
     .news-letter-container {
         justify-content: center;
     }
     .news-letter-form-container {
         width: 95%;
+        margin-right: 0;
     }
     #news-letter-inputs-container {
         flex-direction: column;
@@ -253,5 +274,4 @@ header h2 {
     .main-input {
         font-size: initial;
     }
-
 }
