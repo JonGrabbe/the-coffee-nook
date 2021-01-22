@@ -60,6 +60,9 @@ body {
 .center-text {
     text-align: center;
 }
+.top-margin-spacer {
+    margin-top: 130px;
+}
 
 
 /* ---- header ---- */
@@ -114,7 +117,8 @@ header h2 {
     justify-content: space-around;
     align-items: center;
 
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 .category-item {
     max-width: 360px;
@@ -208,6 +212,15 @@ header h2 {
 
 
 
+@media(max-width: 1550px) {
+    /* ---- categories ---- */
+    .category-item {
+        width: 280px;
+    }
+}
+
+
+
 
 @media(max-width: 1440px) {
     /* --- popular products --- */
@@ -222,15 +235,15 @@ header h2 {
 }
 
 
-@media(max-width: 1200px) {
-    /* ---- categories ---- */
-    .category-item {
-        width: 280px;
+@media(max-width: 1140px) {
+    #shop-categories-container {
+        width: 100%;
     }
 }
 
 
 @media(max-width: 950px) {
+    /* --- categories --- */
     #shop-categories-container {
         flex-direction: column;
     }
