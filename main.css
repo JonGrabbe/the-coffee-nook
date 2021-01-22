@@ -191,11 +191,26 @@ header h2 {
 
 
 
+/* ---- footer ---- */
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+}
+.footer-item-container {
+    margin-left: 50px;
+}
+
+
 
 
 
 
 @media(max-width: 1440px) {
+    /* --- popular products --- */
     .product-item img {
         width: 270px;
     }
